@@ -6,14 +6,18 @@ int lcm(int a, int b) { return (a * b) / gcd(a, b); }
 using namespace std;
 
 int main() {
-  ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
   int t;
   cin >> t;
   while (t--)
   {
     int n;
     cin >> n;
-    // Code here.
+    while (n != 0)
+    {
+      cout << n % 10;
+      n /= 10;
+    }
+    cout << endl;
   }
   return 0;
 }
