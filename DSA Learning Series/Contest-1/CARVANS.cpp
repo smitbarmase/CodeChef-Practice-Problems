@@ -12,7 +12,17 @@ void solve_test_case()
 {
   int n;
   cin >> n;
-  return;
+  vector<int> c(n);
+  for(int &x: c) cin >> x;
+  int count = 1;
+  f(i, 1, n) {
+    if (c[i - 1] >= c[i]) {
+      count++;
+    } else {
+      c[i] = c[i - 1];
+    }
+  }
+  cout << count << endl;
 }
 
 int main() {
