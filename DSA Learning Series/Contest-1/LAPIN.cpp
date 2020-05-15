@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 #define endl '\n'
 #define ll long long
-#define cyes cout << "YES" << endl
-#define cno cout << "NO" << endl
+#define yo cout << "YES" << endl
+#define no cout << "NO" << endl
 #define f(i, a, c) for (int i = a; i < c; i++)
 using namespace std;
 
@@ -38,18 +38,18 @@ void solve_test_case() {
   }
 
   if (ml.size() != mr.size()) {
-    cno;
+    no;
     return;
   }
     
   for (auto x: ml) {
     if (x.second != mr[x.first]) {
-      cno;
+      no;
       return;
     }
   }
     
-  cyes;
+  yo;
 }
 
 int main() {
