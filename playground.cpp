@@ -2,10 +2,9 @@
 #define endl '\n'
 #define cyes cout << "YES" << endl
 #define cno cout << "NO" << endl
-#define f(i, a, c) for (int i = a; i < c; i++)
+#define ll long long;
 int gcd(int a, int b) { if (!b) return a; return gcd(b, a % b); }  
 int lcm(int a, int b) { return (a * b) / gcd(a, b); }
-typedef long long ll;
 using namespace std;
 
 void solve_test_case()
