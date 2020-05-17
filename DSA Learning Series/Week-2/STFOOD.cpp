@@ -15,6 +15,14 @@ int main() {
   {
     int n;
     cin >> n;
+    int max_profit = -1;
+    for (int i = 0; i < n; i++) {
+      int s, v, p;
+      cin >> s >> p >> v;
+      int c = v * (p / (s + 1)) ;
+      if (c > max_profit) max_profit = c;
+    }
+    cout << max_profit << endl;
   }
   return 0;
 }
