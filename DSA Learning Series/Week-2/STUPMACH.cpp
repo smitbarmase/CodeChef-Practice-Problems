@@ -13,26 +13,22 @@ int main() {
   cin >> t;
   while (t--)
   {
-    int n;
+    ll n;
     cin >> n;
-    string s;
-    cin >> s;
-    int wa = 0, wb = 0;
-    int ra = n, rb = n;
-    for (int i = 0; i < 2 * n; i++) {
-      int x = s[i] - '0';
-      if (i % 2 == 0) {
-        wa += x;
-        ra--;
-      } else {
-        wb += x;
-        rb--;
+    vector<ll> v(n);
+
+    for (ll i = 0; i < n; i++) {
+      cin >> v[i];
+    };
+
+    ll min = 1e18, tkn = 0;
+    for (ll i = 0; i < n; i++) {
+      if (v[i] < min) {
+        min = v[i];
       }
-      if (wb > wa + ra || wa > wb + rb || i == (2 * n) - 1 ) {
-        cout << i + 1 << endl;
-        break;
-      }
+      tkn += min;
     }
+    cout << tkn << endl;
   }
   return 0;
 }
