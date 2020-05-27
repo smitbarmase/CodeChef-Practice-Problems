@@ -12,13 +12,15 @@ int lcm(int a, int b) { return (a * b) / gcd(a, b); }
 using namespace std;
 
 int32_t main() {
-  ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+  ios_base::sync_with_stdio(false); cin.tie(NULL);
   int t;
   cin >> t;
-  while (t--)
-  {
-    int n;
-    cin >> n;
+  while(t--) {
+    int n, q;
+    cin >> n >> q;
+    int a[n];
+    f(i, 0, n) cin >> a[i];
+    
   }
   return 0;
 }

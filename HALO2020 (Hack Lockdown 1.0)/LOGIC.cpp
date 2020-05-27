@@ -12,13 +12,16 @@ int lcm(int a, int b) { return (a * b) / gcd(a, b); }
 using namespace std;
 
 int32_t main() {
-  ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+  ios_base::sync_with_stdio(false); cin.tie(NULL);
   int t;
   cin >> t;
   while (t--)
   {
     int n;
     cin >> n;
+    int p = ceil((float)n / (float)2);
+    cout << n * p << endl;
+    cout << endl;
   }
   return 0;
 }
