@@ -16,17 +16,24 @@ int gcd(int a, int b)
 int lcm(int a, int b) { return (a * b) / gcd(a, b); }
 using namespace std;
 
+map<int, int> mp;
+
 void solve()
 {
   int n;
   cin >> n;
+  int count = 0;
+  while (n--)
+  {
+    int id, sid;
+    cin >> id >> sid;
+    count += id - sid;
+  }
+  cout << count << endl;
 }
 
 int32_t main()
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-  cout.tie(NULL);
   int t;
   cin >> t;
   while (t--)

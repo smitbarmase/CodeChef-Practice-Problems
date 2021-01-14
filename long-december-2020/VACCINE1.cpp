@@ -18,8 +18,20 @@ using namespace std;
 
 void solve()
 {
-  int n;
-  cin >> n;
+  int d1, v1, d2, v2, p;
+  cin >> d1 >> v1 >> d2 >> v2 >> p;
+  if (d2 > d1)
+  {
+    cout << ceil(float(d2 - d1) / v1) + ceil(float(p - (d2 - d1)) / (v1 + v2)) << endl;
+  }
+  else if (d1 > d2)
+  {
+    cout << ceil(float(d1 - d2) / v2) + ceil(float(p - (d1 - d2)) / (v1 + v2)) << endl;
+  }
+  else
+  {
+    cout << ceil(float(p) / (v1 + v2)) << endl;
+  }
 }
 
 int32_t main()
