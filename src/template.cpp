@@ -2,17 +2,12 @@
 using namespace std;
 
 #define int long long
-#define pb push_back
-#define mp make_pair
-#define pii pair<int, int>
-#define vi vector<int>
-#define mii map<int, int>
-#define pq priority_queue<int>
-#define pqs priority_queue<int, vi, greater<int>>
+#define f(i, n) for (int i = 0; i < n; i++)
 #define setbits(x) __builtin_popcountll(x)
 #define zerobits(x) __builtin_ctzll(x)
 #define mod 1000000007
 #define inf 1e18
+#define endl "\n";
 
 void solve()
 {
