@@ -2,7 +2,6 @@
 using namespace std;
 
 #define int long long
-#define f(i, n) for (int i = 0; i < n; i++)
 #define setbits(x) __builtin_popcountll(x)
 #define zerobits(x) __builtin_ctzll(x)
 #define mod 1000000007
